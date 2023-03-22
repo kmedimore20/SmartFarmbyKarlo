@@ -14,7 +14,6 @@ function startConnect(){
   
     client.connect({
         onSuccess: onConnect,
-        useSSL: useTLS
     });
   
   
