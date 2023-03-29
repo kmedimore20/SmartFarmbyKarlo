@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
-  
+
   <link rel="stylesheet" href="CSS/style.css">
 
   <script src="JavaScript/MqttSubscribe.js"></script>
@@ -12,28 +13,65 @@
 
 <body onload="startConnect()">
 
-  <h1>Dobro došli na svoju pametnu farmu</h1>
-  <h3>by Karlo Međimorec</h3>
-  <h3>Proba!!</h3>
-  <h1>Opet</h1>
-
-  <div>
-    Senzor 1:
-    <div id="temperatura"></div>
-    <div id="vlaga"></div>
-    <div id="svijetlo"></div>
+  <div class="row">
+    <div class="column" style="background-color: #aaa; width: 100%; height: fit-content;">
+      <h1>Dobro došli na svoju pametnu farmu</h1>
+      <h3>by Karlo Međimorec</h3>
+    </div>
   </div>
 
-  <!-- <div class="wrapper">
-    <form id="connection-information-form">
-       <br><b>Publish Topic and Message:</b>
-       <input id="topic_p" type="text" name="topic_p" placeholder="Publish topic">
-        
-       <input id="Message" type="text" name="message"  placehilder="Message">
-       <input type="button" onclick="publishMessage()" value="Publish">
-    </form>
-    <div id="messages"></div>
- </div> -->
+  <div class="row">
+    <div class="column" style="background-color: #bbb; width: 33.33%; height: 500px; text-align: center;">
+      <h3>Senzor 1:</h3>
+      <div id="temperatura1">Temperatura:</div>
+      <div id="vlaga1">Vlaga</div>
+      <div id="svijetlo1"></div>
+    </div>
+
+    <div class="column" style="background-color: #bbb; width: 33.33%; height: 500px; text-align: center;">
+      <h3>Senzor 2:</h3>
+      <div id="temperatura2">Temperatura:</div>
+      <div id="vlaga2">Vlaga</div>
+      <div id="svijetlo2"></div>
+    </div>
+
+    <div class="column" style="background-color: #bbb; width: 33.33%; height: 500px; text-align: center;">
+      <h3>Senzor 3:</h3>
+      <div id="temperatura3">Temperatura:</div>
+      <div id="vlaga3">Vlaga</div>
+      <div id="svijetlo3"></div>
+    </div>
+  </div>
+
+
+
+
+  <!--
+  <div class="card">
+    <div class="default">
+      <div class="center">
+        <h1>Senzor 1</h1>
+        <ul>
+          <li id="temperatura">Temperatura</li>
+        </ul>
+      </div>
+    </div>
+    <div class="details">
+      <div class="center">
+        <h1>Someone famous<br><span>team leader</span></h1>
+        <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  -->
 
 </body>
+
 </html>
