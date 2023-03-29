@@ -21,7 +21,7 @@ function startConnect(){
   
   function onConnect(){
 
-    /*Prvi senzor*/
+    /*Prvi senzor */
     topicTemeperatura1 = "SmartFarmKarlo/Temperatura1";
     topicVlaga1 = "SmartFarmKarlo/Vlaga1";
     topicSvijetlo1 = "SmartFarmKarlo/Svijetlo1";
@@ -29,7 +29,7 @@ function startConnect(){
     client.subscribe(topicVlaga1);
     client.subscribe(topicSvijetlo1);
 
-    /*Drugi senzor*/
+    /*Drugi senzor */
     topicTemeperatura2 = "SmartFarmKarlo/Temperatura2";
     topicVlaga2 = "SmartFarmKarlo/Vlaga2";
     topicSvijetlo2 = "SmartFarmKarlo/Svijetlo2";
@@ -37,7 +37,7 @@ function startConnect(){
     client.subscribe(topicVlaga2);
     client.subscribe(topicSvijetlo2);
 
-    /*Treci senzor*/
+    /*Treci senzor */
     topicTemeperatura3 = "SmartFarmKarlo/Temperatura3";
     topicVlaga3 = "SmartFarmKarlo/Vlaga3";
     topicSvijetlo3 = "SmartFarmKarlo/Svijetlo3";
